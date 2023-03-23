@@ -1,0 +1,19 @@
+[package]
+edition = "2021"
+name = "arbclaim"
+version = "0.1.0"
+
+[dependencies]
+anyhow = "*"
+dotenv = "*"
+eyre = "*"
+futures = "*"
+hex = "0.4.3"
+
+[dependencies.ethers]
+features = ["legacy", "ws", "rustls", "abigen"]
+version = "1.0.2"
+
+[dependencies.tokio]
+features = ["full"]
+version = "1.26.0"
